@@ -1,0 +1,193 @@
+@import url("https://cdn.jsdelivr.net/gh/pengx17/logseq-dev-theme@main/bullet_threading.css");
+
+:root {
+  --ls-block-bullet-active-color: #9cb380;
+  --ls-block-bullet-threading-width: 2px;
+}
+
+
+.block-content[data-type=annotation] a.prefix-link:before {
+    content: "·";
+}
+
+.done {
+    text-decoration: none;
+    opacity: .9; /* Optional */
+}
+
+:root {
+    --ls-main-content-max-width: 95%;
+    --ls-main-content-max-width-wide: 96%;
+}
+
+/*a.tag {
+    font-size: 100%;
+}*/
+
+.theme-settings,
+html[data-theme=dark],
+html[data-theme=light] {
+    --ls-page-title-size: 1.9rem;
+}
+
+
+.theme-settings,
+html[data-theme=dark] {
+    --cd-primary-bg-color: #36393F;
+    --cd-secondary-bg-color: #32353A;
+    --cd-alternate-bg-color: #2F3136;
+    --cd-quaternary-bg-color: #2F3136;
+    --cd-highlight-bg-color: #202225;
+
+    --cd-primary-text-color: #E6E8E8;
+    --cd-alternate-text-color: #E6E8E8;
+
+    --cd-active-color-1: #404675;
+    --cd-active-color-2: #4B443E;
+    --cd-active-color-3: #FAAA1A;
+    --cd-active-color-4: #444444;
+    --cd-active-color-5: #08AFF5;
+
+    /* === TASKS === */
+    --ts-checkbox-border-radius: 4px; 
+
+    --ts-title-color: var(--cd-primary-text-color);
+    --ts-headline-color: var(--cd-primary-text-color);
+    --ts-text-bold-color: var(--cd-primary-text-color);
+    --ts-text-italic-color: var(--cd-primary-text-color);
+
+    /* === CODE BLOCKS === */
+    --ts-inline-code-bg: var(--cd-primary-bg-color);
+    --ts-inline-code-contrast: 85%;
+    --ts-inline-code-color: var(--cd-primary-text-color);
+
+    /* === EXT LINKS === */
+    --ts-ext-link-color: var(--cd-active-color-5);
+    --ts-ext-link-bg-color: transparent;
+    --ts-ext-link-border-bottom: 2px solid var(--cd-active-color-5);
+
+    /* === TAGS === */
+    --ts-tag-color: #FFFFFF ;
+    --ts-tag-background-color: var(--cd-active-color-1);
+    --ts-tag-weight: 400;
+    --ts-tag-color-hover: var(--cd-primary-bg-color);
+    --ts-tag-border-hover: 0px solid var(--ts-tag-color-hover);
+    --ts-tag-border: 0px solid var(--cd-active-color-1);
+    --ts-tag-border-radius: 4px;
+    --ts-tag-padding: 0px 4px 0px 4px;
+    --ts-tag-box-shadow: 0px 0px;
+    --ts-tag-text-decoration: underline;
+    --ts-tag-text-decoration-thickness: 2px;
+    --ts-tag-text-decoration-color: var(--cd-active-color-1);
+
+    /* === PAGE REFERENCES === */
+    --ts-page-ref-color: var(--cd-active-color-3);
+
+    --ts-property-border-radius: 4px;
+
+    /* === GUIDELINE === */
+    --ts-guideline-inactive-color: var(--cd-active-color-4);
+    --ts-guideline-active-color: var(--cd-active-color-4);
+
+}
+
+.dark-theme,
+html[data-theme=dark] {
+    --ls-primary-background-color: var(--cd-primary-bg-color);
+    --ls-secondary-background-color: var(--cd-secondary-bg-color);
+    --ls-tertiary-background-color: var(--cd-alternate-bg-color);
+    --ls-quaternary-background-color: var(--cd-quaternary-bg-color);
+    --ls-table-tr-even-background-color: var(--cd-alternate-bg-color);
+    --ls-block-properties-background-color: var(--cd-alternate-bg-color);
+    --ls-page-properties-background-color: var(--cd-alternate-bg-color);
+    --ls-right-sidebar-code-bg-color: var(--cd-alternate-bg-color); /*没反应*/
+
+    --ls-primary-text-color: var(--cd-primary-text-color);
+    --ls-secondary-text-color: var(--cd-alternate-text-color);
+    --ls-active-primary-color: var(--ls-primary-text-color);
+    --ls-active-secondary-color: var(--ls-secondary-text-color);
+
+    /* == Scrollbars == */
+    --ls-scrollbar-foreground-color: var(--cd-highlight-bg-color);
+    --ls-scrollbar-background-color: var(--cd-quaternary-bg-color);
+    --ls-scrollbar-thumb-hover-color: var(--cd-highlight-bg-color);
+
+    /* == Code blocks == */
+    --ls-page-inline-code-color: var(--cd-primary-text-color);
+    --ls-page-inline-code-bg-color: var(--cd-highlight-bg-color);
+
+    /* == Checkboxes */
+    --ls-page-checkbox-color: var(--cd-active-color-1);
+    --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+
+    /* == Tags == */
+    --ls-tag-text-color: var(--ts-tag-color);
+    --ls-tag-text-hover-color: var(--ts-tag-color-hover);
+
+    /* == Borders + Outlines */
+    --ls-border-color: var(--cd-active-color-4);
+    --ls-secondary-border-color: var(--cd-active-color-4);
+    --ls-guideline-color: var(--ts-guideline-inactive-color);
+
+    --ls-menu-hover-color: var(--cd-secondary-bg-color);
+    --ls-title-text-color: var(--cd-primary-text-color);
+    --ls-block-highlight-color: var(--cd-highlight-bg-color);
+    --ls-head-text-color: var(--cd-primary-text-color);
+    --ls-icon-color: var(--cd-primary-text-color);
+    --ls-search-icon-color: var(--cd-active-color-1);
+    --ls-a-chosen-bg: var(--cd-highlight-bg-color);
+    --ls-block-bullet-border-color: #505050;
+    --ls-block-bullet-color: #AEB0B3;
+}
+
+.external-link {
+    color: var(--ts-ext-link-color);
+    background: var(--ts-ext-link-bg-color);
+    border-bottom: var(--ts-ext-link-border-bottom);
+}
+
+.form-checkbox {
+    border-radius: var(--ts-checkbox-border-radius);
+}
+
+/* === TAGS === */
+
+a.tag {
+    background: var(--ts-tag-background-color);
+    color: var(--ts-tag-color);
+    font-size: 90%;
+    font-weight: var(--ts-tag-weight);
+    padding: var(--ts-tag-padding);
+    border: var(--ts-tag-border);
+    border-radius: var(--ts-tag-border-radius);
+    box-shadow: var(--ts-tag-box-shadow);
+    text-decoration: var(--ts-tag-text-decoration);
+    text-decoration-thickness: var(--ts-tag-text-decoration-thickness);
+    text-decoration-color: var(--ts-tag-text-decoration-color);
+    text-decoration-skip-ink: var(--ts-tag-text-decoration-skip);
+}
+
+a.tag:hover {
+    color: var(--ts-tag-color-hover);
+}
+
+.page-ref,
+.page-ref:hover {
+    color: var(--ts-page-ref-color);
+    font-weight: 450;
+    background: var(--ts-page-ref-background);
+    border: var(--ts-page-ref-border);
+    border-radius: var(--ts-page-ref-border-radius);
+    padding: var(--ts-page-ref-padding);
+}
+
+.block-properties {
+    border-radius: var(--ts-property-border-radius);
+}
+
+.CodeMirror-gutter,
+.CodeMirror-lines,
+.CodeMirror-scroll,
+.CodeMirror-sizer {
+    background: var(--cd-alternate-bg-color);
+}

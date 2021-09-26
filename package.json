@@ -1,0 +1,17 @@
+{
+  "name": "Discord Like Dark Theme",
+  "author": "dale502",
+  "version": "0.0.1",
+  "description": "Discord Like Dark Theme",
+  "logseq": {
+    "themes": [
+      {
+        "name": "Discord Dark",
+        "url": "./discord_like_dark.css",
+        "description": "Discord Like Dark Theme",
+        "mode": "dark"
+      }
+    ],
+    "id": "Discord Like Dark"
+  }
+}
