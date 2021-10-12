@@ -1,14 +1,14 @@
 {
   "name": "Discord Like Dark Theme",
   "author": "dale502",
-  "version": "0.0.1",
-  "description": "Discord Like Dark Theme",
+  "version": "0.0.2",
+  "description": "A theme inspired by Discord's color",
   "logseq": {
     "themes": [
       {
         "name": "Discord Dark",
         "url": "./discord_like_dark.css",
-        "description": "Discord Like Dark Theme",
+        "description": "A theme inspired by Discord's color",
         "mode": "dark"
       }
     ],
