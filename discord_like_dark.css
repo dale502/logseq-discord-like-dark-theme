@@ -188,3 +188,13 @@ a.tag:hover {
 .CodeMirror-sizer {
     background: var(--cd-alternate-bg-color);
 }
+
+.ui__modal-panel .panel-content {
+    width: auto;
+}
+.ui__modal-panel .panel-content .cp__palette-main {
+    width: auto;
+}
+.ui__modal-panel .panel-content .ls-search {
+    width: 60vw;
+}
